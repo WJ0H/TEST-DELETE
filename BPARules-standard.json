@@ -333,5 +333,15 @@
         "Scope": "Relationship",
         "Expression": "crossFilteringBehavior == crossFilteringBehavior.bothDirections",
         "CompatibilityLevel": 1200
-  }
+  },
+    {
+        "ID": "AUTO_TIME_INTELLIGENCE_ENABLED",
+        "Name": "Auto Time Intelligence Enabled",
+        "Category": "Metadata",
+        "Description": "It's recommended to disable auto time intelligence and use a custom date table instead for better control and accuracy in time intelligence calculations.",
+        "Severity": 1,
+        "Scope": "Model",
+        "Expression": "Convert.ToInt32(Model.Annotations[\"__PBI_TimeIntelligenceEnabled\"]) = 1",
+        "CompatibilityLevel": 1200
+  },
 ]
