@@ -324,5 +324,14 @@
         "Expression":  "ConnectionString.IndexOf(\"SQLNCLI\", StringComparison.OrdinalIgnoreCase) \u003e= 0 or\nConnectionString.IndexOf(\"SQLOLEDB\", StringComparison.OrdinalIgnoreCase) \u003e= 0",
         "CompatibilityLevel":  1200,
         "Source":  "standard\\Performance"
-    }
+    },
+    {
+        "ID": "1:1_RELATIONSHIPS",
+        "Name": "1:1 Relationships",
+        "Category": "Naming Conventions",
+        "Severity": 1,
+        "Scope": "Relationship",
+        "Expression": "crossFilteringBehavior == crossFilteringBehavior.bothDirections",
+        "CompatibilityLevel": 1200
+  }
 ]
